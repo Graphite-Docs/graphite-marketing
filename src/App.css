@@ -74,7 +74,7 @@ body {
 }
 
 nav {
-  background: #fff!important;
+  background: #282828!important;
 }
 
 .drop {
@@ -402,15 +402,15 @@ select {
 
 /*//Header design*/
 .nav-wrapper {
-  background-color: #fff;
+  background-color: #282828!important;
 }
 
 nav .brand-logo {
-  color: #000;
+  color: #fff;
 }
 
 nav ul a {
-  color: #000;
+  color: #fff;
 }
 
 .brand-logo {

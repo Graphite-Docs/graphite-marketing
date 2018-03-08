@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import pencil from './pencil.png';
+import pencil from './pencil-256.png';
 import './App.css';
 
 class Header extends Component {
@@ -45,7 +45,7 @@ class Header extends Component {
             </ul>
           </div>
           <div className="nav-wrapper">
-            <a href="/" className="brand-logo left">Graphite.<img className="pencil" src="http://www.iconsplace.com/icons/preview/black/pencil-256.png" alt="pencil" /></a>
+            <a href="/" className="brand-logo left">Graphite.<img className="pencil" src={pencil} alt="pencil" /></a>
             <div className="hide-on-med-and-down">
               <ul id="nav-mobile" className="right">
                 <li><a href="/about">About</a></li>
