@@ -245,6 +245,31 @@ h1, h2, h3, h4, h5 {
   background-position:center;
 }
 
+.social-proof-img {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+.wired {
+  margin-top: 8%;
+}
+
+.wapo {
+  margin-top: 23%;
+}
+
+.cheddar {
+  margin-top: 12%;
+}
+
+.lifehacker {
+  margin-top: 15%;
+}
+
+.uses {
+  margin: auto;
+}
+
 .journo-background {
   padding-top: 200px!important;
   padding-bottom: 200px!important;

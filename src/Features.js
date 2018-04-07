@@ -74,29 +74,29 @@ class Features extends Component {
           <div className="row">
             <div className="col s12 m3">
               <a href="/personal">
-              <div className="card hoverable small">
-                <h3 className="center-align">Personal</h3>
+              <div className="card hoverable">
+                <h3 className="flow-text uses center-align">Personal</h3>
               </div>
               </a>
             </div>
             <div className="col s12 m3">
               <a href="/journalism">
-              <div className="card hoverable small">
-                <h3 className="center-align">Journalism</h3>
+              <div className="card hoverable">
+                <h3 className="flow-text uses center-align">Journalism</h3>
               </div>
               </a>
             </div>
             <div className="col s12 m3">
               <a href="/non-governmental">
-              <div className="card hoverable small">
-                <h3 className="center-align">NGO</h3>
+              <div className="card hoverable">
+                <h3 className="flow-text uses center-align">NGO</h3>
               </div>
               </a>
             </div>
             <div className="col s12 m3">
               <a href="/business">
-              <div className="card hoverable small">
-                <h3 className="center-align">Business</h3>
+              <div className="card hoverable">
+                <h3 className="flow-text uses center-align">Business</h3>
               </div>
               </a>
             </div>

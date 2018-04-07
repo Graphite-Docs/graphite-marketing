@@ -12,93 +12,73 @@ import docs from './Documents_Large.png';
 import sheetsLarge from './Sheets_Large.png';
 import contacts from './Contacts_Large.png';
 import convos from './Conversations_Large.png';
+import wapo from './wapo.png';
+import wired from './wired.png';
+import lifehacker from './lifehacker.png';
+import cheddar from './cheddar.png';
 
 
 class Main extends Component {
   render() {
-    var TxtRotate = function(el, toRotate, period) {
-      this.toRotate = toRotate;
-      this.el = el;
-      this.loopNum = 0;
-      this.period = parseInt(period, 10) || 2000;
-      this.txt = '';
-      this.tick();
-      this.isDeleting = false;
-    };
-
-TxtRotate.prototype.tick = function() {
-  var i = this.loopNum % this.toRotate.length;
-  var fullTxt = this.toRotate[i];
-
-  if (this.isDeleting) {
-    this.txt = fullTxt.substring(0, this.txt.length - 1);
-  } else {
-    this.txt = fullTxt.substring(0, this.txt.length + 1);
-  }
-
-  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-  var that = this;
-  var delta = 300 - Math.random() * 100;
-
-  if (this.isDeleting) { delta /= 2; }
-
-  if (!this.isDeleting && this.txt === fullTxt) {
-    delta = this.period;
-    this.isDeleting = true;
-  } else if (this.isDeleting && this.txt === '') {
-    this.isDeleting = false;
-    this.loopNum++;
-    delta = 500;
-  }
-
-  setTimeout(function() {
-    that.tick();
-  }, delta);
-};
-
-window.onload = function() {
-  var elements = document.getElementsByClassName('txt-rotate');
-  for (var i=0; i<elements.length; i++) {
-    var toRotate = elements[i].getAttribute('data-rotate');
-    var period = elements[i].getAttribute('data-period');
-    if (toRotate) {
-      new TxtRotate(elements[i], JSON.parse(toRotate), period);
-    }
-  }
-  // INJECT CSS
-  var css = document.createElement("style");
-  css.type = "text/css";
-  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
-  document.body.appendChild(css);
-};
+//     var TxtRotate = function(el, toRotate, period) {
+//       this.toRotate = toRotate;
+//       this.el = el;
+//       this.loopNum = 0;
+//       this.period = parseInt(period, 10) || 2000;
+//       this.txt = '';
+//       this.tick();
+//       this.isDeleting = false;
+//     };
+//
+// TxtRotate.prototype.tick = function() {
+//   var i = this.loopNum % this.toRotate.length;
+//   var fullTxt = this.toRotate[i];
+//
+//   if (this.isDeleting) {
+//     this.txt = fullTxt.substring(0, this.txt.length - 1);
+//   } else {
+//     this.txt = fullTxt.substring(0, this.txt.length + 1);
+//   }
+//
+//   this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+//
+//   var that = this;
+//   var delta = 300 - Math.random() * 100;
+//
+//   if (this.isDeleting) { delta /= 2; }
+//
+//   if (!this.isDeleting && this.txt === fullTxt) {
+//     delta = this.period;
+//     this.isDeleting = true;
+//   } else if (this.isDeleting && this.txt === '') {
+//     this.isDeleting = false;
+//     this.loopNum++;
+//     delta = 500;
+//   }
+//
+//   setTimeout(function() {
+//     that.tick();
+//   }, delta);
+// };
+//
+// window.onload = function() {
+//   var elements = document.getElementsByClassName('txt-rotate');
+//   for (var i=0; i<elements.length; i++) {
+//     var toRotate = elements[i].getAttribute('data-rotate');
+//     var period = elements[i].getAttribute('data-period');
+//     if (toRotate) {
+//       new TxtRotate(elements[i], JSON.parse(toRotate), period);
+//     }
+//   }
+//   // INJECT CSS
+//   var css = document.createElement("style");
+//   css.type = "text/css";
+//   css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+//   document.body.appendChild(css);
+// };
 
     return(
       <div>
-      <div className="center-align main-hero">
-        <div className="container">
-        <div className="card hero-card">
-        <h1>Own your
-        <span
-           className="txt-rotate"
-           data-period="2000"
-           data-rotate='[ " documents.", " spreadsheets.", " data." ]'></span>
-        </h1>
-          <h5>Graphite is powered by <a href="http://blockstack.org" target="_blank">Blockstack</a> and is the first truly decentralized and encrypted replacement for Google G-Suite and Microsoft Office.</h5>
-          <a href="http://app.graphitedocs.com" target="_blank"><button
-            className="btn btn-primary btn-lg"
-            id="signin-button"
-          >
-            Get Started
-          </button></a>
-          <a href="#more"><button
-            className="btn btn-primary btn-lg grey"
-          >
-            Learn More
-          </button></a>
-        </div>
-        </div>
-      </div>
       <div className="hero-image-section row">
         <div className="col s12 m6">
 
@@ -110,6 +90,37 @@ window.onload = function() {
         </div>
       </div>
       <div>
+
+      <div className="row container social-proof">
+        <div className="col s3">
+          <div>
+            <a href="https://www.wired.com/story/the-decentralized-internet-is-here-with-some-glitches" target="_blank" rel="noopener">
+              <img className="social-proof-img wired responsive-img" src={wired} alt="Wired article about Graphite" />
+            </a>
+          </div>
+        </div>
+        <div className="col s3">
+          <div>
+            <a href="https://www.washingtonpost.com/news/the-switch/wp/2018/03/23/the-new-technology-that-aspires-to-deletefacebook-for-good/?utm_term=.25e014058822" target="_blank" rel="noopener">
+              <img className="social-proof-img wapo responsive-img" src={wapo} alt="Washington Post article about Graphite" />
+            </a>
+          </div>
+        </div>
+        <div className="col s3">
+          <div>
+            <a href="https://lifehacker.com/check-out-this-google-docs-competitor-1823520656" target="_blank" rel="noopener">
+              <img className="social-proof-img lifehacker responsive-img" src={lifehacker} alt="Lifehacker article about Graphite" />
+            </a>
+          </div>
+        </div>
+        <div className="col s3">
+          <div>
+            <a href="https://cheddar.com/videos/graphite-the-blockchain-backed-competitor-to-google-docs" target="_blank" rel="noopener">
+              <img className="social-proof-img cheddar responsive-img" src={cheddar} alt="Cheddar interview with Graphite" />
+            </a>
+          </div>
+        </div>
+      </div>
 
       <div className="white-section app-banner">
         <div className="container row">
@@ -128,6 +139,20 @@ window.onload = function() {
           <div className="col s6 m3 center-align">
             <img className="responsive-img" src={convos} alt="conversations-icon" />
             <h4 className="flow-text">Conversations</h4>
+          </div>
+          <div className="col s12 center-align">
+            <h5>Graphite is powered by <a href="http://blockstack.org" target="_blank">Blockstack</a> and is the first truly decentralized and encrypted replacement for Google G-Suite and Microsoft Office.</h5>
+            <a href="http://app.graphitedocs.com" target="_blank"><button
+              className="btn btn-primary btn-lg"
+              id="signin-button"
+            >
+              Get Started
+            </button></a>
+            <a href="/features"><button
+              className="btn btn-primary btn-lg grey"
+            >
+              Learn More
+            </button></a>
           </div>
         </div>
       </div>
