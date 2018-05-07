@@ -7,6 +7,7 @@ import sheet from './SingleSheet.png';
 import document from './SingleDoc.png';
 import sharing from './Shared.png';
 import Conversation from './ConversationsExample.png';
+import Stealthy from './Stealthy.png';
 
 class Features extends Component {
 
@@ -62,11 +63,10 @@ class Features extends Component {
         </div>
         <div>
           <div className="center-align container">
-            <h1>Introducing Conversations</h1>
-            <h5>A new way to communicate, connect, and share.</h5>
-            <h5>End-to-end encryption that Graphite never touches. Your messages, your data, your connection.</h5>
+            <h1>Introducing Stealthy</h1>
+            <h5>A decentralized and encrypted messenger integrated into Graphite. <a href="https://www.stealthy.im">Learn more about Stealthy.</a></h5>
           </div>
-          <img src={Conversation} className="responsive-img"/>
+          <img src={Stealthy} className="responsive-img"/>
         </div>
         <div className="container">
           <h2>Learn more.</h2>

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import pencil from './pencil.png';
+import daniel from './daniel.jpg';
+import dan from './dan.jpeg';
 import './App.css';
 
 class About extends Component {
@@ -27,22 +29,27 @@ class About extends Component {
           <div>
             <h1 className="flow-text">Purpose</h1>
             <p className="flow-text">Graphite serves consumers who want to take back their data,
-            journalists and newsrooms who are looking to avoid censorship, activists trying to organize without fear, and businesses looking for real security.</p>
+            journalists and newsrooms who are looking to avoid censorship, activists trying to organize without fear, businesses looking for real security, and more.</p>
             <p className="flow-text">Graphite is 100% distributed just like the technology its built on. But if you'd like to contact us, we'd love to hear from you. You can reach out <a href="mailto:contact@graphitedocs.com">here.</a></p>
           </div>
           <div>
-
-            <div className="center-align team">
-              <img className="profile-img circle" alt="founder profile" src="https://preview.ibb.co/fObix6/justin.jpg"/>
-              <h5 className="center-align">Justin Hunter - Founder</h5>
-              <p>Justin has been in the technology industry for the last decade. He began building Graphite to support his other passion—writing. Justin's fiction and non-fiction has been published in numerous literary journals, magazines,
-              and other publications. He hopes Graphite will enable writing, creativity, activistism, and security for generations to come.</p>
+            <div className="row">
+              <div className="center-align team col s12 m4">
+                <img className="profile-img circle" alt="founder profile" src="https://preview.ibb.co/fObix6/justin.jpg"/>
+                <h5 className="center-align">Justin Hunter - Founder</h5>
+                <p>Justin has been in the technology industry for the last decade. He began building Graphite to support his other passion—writing. Graphite grew into something larger than just writing, and Justin hopes to help support journalists, activists, businesses, schools, and more.</p>
+              </div>
+              <div className="center-align team col s12 m4">
+                <img className="profile-img circle" alt="employee profile" src={daniel}/>
+                <h5 className="center-align">Daniel Wang - Mobile Developer</h5>
+                <p>Daniel is an expert in developing mobile applications and has built major features in applications which have had 10s of millions of users. He is studying CS at the University of Waterloo. He is the building out Graphite's native mobile applications.</p>
+              </div>
+              <div className="center-align team col s12 m4">
+                <img className="profile-img circle" alt="advisor profile" src={dan}/>
+                <h5 className="center-align">Dan Hughes - Advisor</h5>
+                <p>Dan is the president and COO of <a href="http://learningmachine.com">Learning Machine Technologies, Inc.</a> He is also an advisor for Graphite.</p>
+              </div>
             </div>
-            <div className="center-align team">
-              <img className="profile-img circle" alt="empty profile" src="https://s3.amazonaws.com/onename/avatar-placeholder.png"/>
-              <p>Are you the next member of the Graphite team? Send an <a href="mailto:contact@graphitedocs.com">email</a> if you are interested.</p>
-            </div>
-
           </div>
           <div className="button-div center-align">
             <a href="https://medium.com/the-lead" target="_blank"><button className="btn black">Read the blog</button></a>

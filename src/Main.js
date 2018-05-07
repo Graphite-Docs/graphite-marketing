@@ -16,6 +16,8 @@ import wapo from './wapo.png';
 import wired from './wired.png';
 import lifehacker from './lifehacker.png';
 import cheddar from './cheddar.png';
+import vault from './vault.png';
+import Features from './Features.png';
 
 
 class Main extends Component {
@@ -123,8 +125,8 @@ class Main extends Component {
       </div>
 
       <div className="white-section app-banner">
-        <div className="container row">
-          <div className="col s6 m3 center-align">
+      <div className="container row">
+          {/*<div className="col s6 m3 center-align">
             <img className="responsive-img" src={docs} alt="document-icon" />
             <h4 className="flow-text">Documents</h4>
           </div>
@@ -137,9 +139,10 @@ class Main extends Component {
             <h4 className="flow-text">Contacts</h4>
           </div>
           <div className="col s6 m3 center-align">
-            <img className="responsive-img" src={convos} alt="conversations-icon" />
-            <h4 className="flow-text">Conversations</h4>
-          </div>
+            <img className="vault-icon" src={vault} alt="conversations-icon" />
+            <h4 className="flow-text">Vault</h4>
+          </div>*/}
+          <img className="responsive-img" src={Features} alt="Features" />
           <div className="col s12 center-align">
             <h5>Graphite is powered by <a href="http://blockstack.org" target="_blank">Blockstack</a> and is the first truly decentralized and encrypted replacement for Google G-Suite and Microsoft Office.</h5>
             <a href="http://app.graphitedocs.com" target="_blank"><button

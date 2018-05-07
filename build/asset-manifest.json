@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.665fd972.css",
-  "main.css.map": "static/css/main.665fd972.css.map",
-  "main.js": "static/js/main.ad4ba908.js",
-  "main.js.map": "static/js/main.ad4ba908.js.map",
+  "main.css": "static/css/main.c224842d.css",
+  "main.css.map": "static/css/main.c224842d.css.map",
+  "main.js": "static/js/main.510fde7a.js",
+  "main.js.map": "static/js/main.510fde7a.js.map",
   "static/media/AddNewContact.gif": "static/media/AddNewContact.db154776.gif",
   "static/media/ConversationsExample.png": "static/media/ConversationsExample.c3d15a10.png",
   "static/media/Docs.png": "static/media/Docs.7081a852.png",
@@ -10,12 +10,14 @@
   "static/media/SingleDoc.png": "static/media/SingleDoc.d6008e09.png",
   "static/media/SingleSheet.png": "static/media/SingleSheet.88912c7d.png",
   "static/media/blockstack.png": "static/media/blockstack.621177f3.png",
+  "static/media/cheddar.png": "static/media/cheddar.3f18e551.png",
   "static/media/connect.jpg": "static/media/connect.427889a6.jpg",
   "static/media/diagram.png": "static/media/diagram.9157e33f.png",
   "static/media/editdoc.png": "static/media/editdoc.3977bc10.png",
   "static/media/fire.jpg": "static/media/fire.d4fbe2eb.jpg",
   "static/media/layout.jpg": "static/media/layout.9fda62c2.jpg",
   "static/media/leaders.jpg": "static/media/leaders.001aff7a.jpg",
+  "static/media/lifehacker.png": "static/media/lifehacker.6527c2d7.png",
   "static/media/man.jpg": "static/media/man.6369ae4a.jpg",
   "static/media/march.jpg": "static/media/march.089f82f7.jpg",
   "static/media/newdoc.png": "static/media/newdoc.7ef2c466.png",
@@ -24,5 +26,7 @@
   "static/media/shareddoc.png": "static/media/shareddoc.bc82f44a.png",
   "static/media/sheets.png": "static/media/sheets.1d02c152.png",
   "static/media/stats.png": "static/media/stats.dc131dbf.png",
-  "static/media/tweets.png": "static/media/tweets.6ac7a0f1.png"
+  "static/media/tweets.png": "static/media/tweets.6ac7a0f1.png",
+  "static/media/wapo.png": "static/media/wapo.f00335ac.png",
+  "static/media/wired.png": "static/media/wired.cc2eab0e.png"
 }
