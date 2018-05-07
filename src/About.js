@@ -42,7 +42,7 @@ class About extends Component {
               <div className="center-align team col s12 m4">
                 <img className="profile-img circle" alt="employee profile" src={daniel}/>
                 <h5 className="center-align">Daniel Wang - Mobile Developer</h5>
-                <p>Daniel is an expert in developing mobile applications and has built major features in applications which have had 10s of millions of users. He is studying CS at the University of Waterloo. He is the building out Graphite's native mobile applications.</p>
+                <p>Daniel is an expert in developing mobile applications and has built major features in applications which have had 10s of millions of users. He is studying CS at the University of Waterloo. He is building out Graphite's native mobile applications.</p>
               </div>
               <div className="center-align team col s12 m4">
                 <img className="profile-img circle" alt="advisor profile" src={dan}/>
