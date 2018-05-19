@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import pencil from './pencil.png';
 import daniel from './daniel.jpg';
 import dan from './dan.jpeg';
+import ethan from './ethan.jpg';
 import './App.css';
 
 class About extends Component {
@@ -34,20 +35,25 @@ class About extends Component {
           </div>
           <div>
             <div className="row">
-              <div className="center-align team col s12 m4">
+              <div className="center-align team col s12 m3">
                 <img className="profile-img circle" alt="founder profile" src="https://preview.ibb.co/fObix6/justin.jpg"/>
                 <h5 className="center-align">Justin Hunter - Founder</h5>
                 <p>Justin has been in the technology industry for the last decade. He began building Graphite to support his other passion—writing. Graphite grew into something larger than just writing, and Justin hopes to help support journalists, activists, businesses, schools, and more.</p>
               </div>
-              <div className="center-align team col s12 m4">
+              <div className="center-align team col s12 m3">
                 <img className="profile-img circle" alt="employee profile" src={daniel}/>
                 <h5 className="center-align">Daniel Wang - Mobile Developer</h5>
                 <p>Daniel is an expert in developing mobile applications and has built major features in applications which have had 10s of millions of users. He is studying CS at the University of Waterloo. He is building out Graphite's native mobile applications.</p>
               </div>
-              <div className="center-align team col s12 m4">
+              <div className="center-align left team col s12 m3">
                 <img className="profile-img circle" alt="advisor profile" src={dan}/>
                 <h5 className="center-align">Dan Hughes - Advisor</h5>
                 <p>Dan is the president and COO of <a href="http://learningmachine.com">Learning Machine Technologies, Inc.</a> He is also an advisor for Graphite.</p>
+              </div>
+              <div className="center-align team col s12 m3">
+                <img className="profile-img circle" alt="web app dev profile" src={ethan}/>
+                <h5 className="center-align">Ethan Ryan - Front-End Developer</h5>
+                <p>Ethan is a full stack web developer with a passion for creative problem solving. He is building out Graphite's real-time collaboration and notification system.</p>
               </div>
             </div>
           </div>
