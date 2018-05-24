@@ -10,6 +10,7 @@ import Journalism from './Journalism';
 import Business from './Business';
 import NGO from './NGO';
 import FAQ from './FAQ';
+import Privacy from './Privacy';
 import './App.css';
 
 class App extends Component {
@@ -29,6 +30,7 @@ class App extends Component {
           <Route exact path="/business" component={Business} />
           <Route exact path="/non-governmental" component={NGO} />
           <Route exact path="/faq" component={FAQ} />
+          <Route exact path="/privacy" component={Privacy} />
           <Footer />
         </div>
       </BrowserRouter>

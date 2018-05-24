@@ -24,6 +24,7 @@ class Footer extends Component {
                 <li><a className="grey-text text-lighten-3" href="mailto:contact@graphitedocs.com">Contact</a></li>
                 <li><a className="grey-text text-lighten-3" href="https://twitter.com/graphitedocs">Twitter</a></li>
                 <li><a className="grey-text text-lighten-3" href="https://github.com/Graphite-Docs/graphite">GitHub</a></li>
+                <li><a className="grey-text text-lighten-3" href="https://graphitedocs.com/privacy">Privacy Policy</a></li>
               </ul>
             </div>
           </div>
