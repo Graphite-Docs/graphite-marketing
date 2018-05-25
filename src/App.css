@@ -270,6 +270,14 @@ h1, h2, h3, h4, h5 {
   margin: auto;
 }
 
+.text-message {
+  margin-top: 30px;
+}
+
+.demo-form {
+  margin-top: 70px;
+}
+
 .journo-background {
   padding-top: 200px!important;
   padding-bottom: 200px!important;

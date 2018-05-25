@@ -41,6 +41,7 @@ class Header extends Component {
               <li><a href="/about">About</a></li>
               <li><a href="/features">Features</a></li>
               <li><a href="/faq">FAQ</a></li>
+              <li><a href="/demo">Request Demo</a></li>
               <li><a href="https://app.graphitedocs.com" target="_blank">Sign In</a></li>
             </ul>
           </div>
@@ -52,6 +53,7 @@ class Header extends Component {
                 <li><a href="/features">Features</a></li>
                 <li><a className="dropdown-button" href="#!" data-activates="dropdown1">Uses<i className="material-icons drop right">arrow_drop_down</i></a></li>
                 <li><a href="/faq">FAQ</a></li>
+                <li><a href="/demo">Request Demo</a></li>
                 <li><a href="http://app.graphitedocs.com" target="_blank">Sign in</a></li>
               </ul>
             </div>
