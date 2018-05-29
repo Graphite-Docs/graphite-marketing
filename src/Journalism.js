@@ -50,7 +50,7 @@ class Journalism extends Component {
         <div className="container">
           <h3>Security policy controls for journalists and their newsrooms.</h3>
           <h5>Individual control over the deletion of data.</h5>
-          <h5>Broad, newsroom control over data access and desctruction.</h5>
+          <h5>Broad, newsroom control over data access and destruction.</h5>
           <h5>Security for editors, journalists, and their sources.</h5>
           <h5>Unidentifiable bylines for those times when anonymity matters.</h5>
           <div className="center-align">
