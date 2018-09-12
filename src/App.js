@@ -12,6 +12,7 @@ import NGO from './NGO';
 import FAQ from './FAQ';
 import Privacy from './Privacy';
 import Demo from './Demo';
+import Pricing from './Pricing';
 import './App.css';
 
 class App extends Component {
@@ -33,6 +34,7 @@ class App extends Component {
           <Route exact path="/faq" component={FAQ} />
           <Route exact path="/privacy" component={Privacy} />
           <Route exact path="/demo" component={Demo} />
+          <Route exact path="/pricing" component={Pricing} />
           <Footer />
         </div>
       </BrowserRouter>

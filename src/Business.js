@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import pencil from './pencil.png';
+// import pencil from './pencil.png';
 import './App.css';
-import personal from './personal.jpg';
-import connect from './connect.jpg';
-import march from './march.jpg';
-import layout from './layout.jpg';
+// import personal from './personal.jpg';
+// import connect from './connect.jpg';
+// import march from './march.jpg';
+// import layout from './layout.jpg';
 import man from './man.jpg';
 import arch from './diagram.png'
 
@@ -22,7 +22,7 @@ class Business extends Component {
             <div className="row">
               <div className="col s12 m6">
                 <img src={arch} className="responsive-img" alt="blockstack architecture" />
-                <figcaption>Courtesy of <a href="http://blockstack.org" target="_blank">Blockstack.</a></figcaption>
+                <figcaption>Courtesy of <a href="http://blockstack.org" rel="noopener noreferrer" target="_blank">Blockstack.</a></figcaption>
               </div>
               <div className="col s12 m6 arch-para">
                 <h5>Graphite, built on Blockstack, enables you to choose where you store your encrypted data.</h5>

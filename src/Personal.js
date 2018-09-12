@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import pencil from './pencil.png';
 import './App.css';
 import personal from './personal.jpg';
 import connect from './connect.jpg';
@@ -33,24 +32,24 @@ class Personal extends Component {
                 <i className="material-icons large">edit</i>
                 <h5>Format your writing the way you want. Write book, write a story, write a presentation. Write anything you want.</h5>
               </div>
-              <h5></h5>
+
             </div>
           </div>
         </div>
         <div className="container">
-          <h2>Real connections with friends, family, and colleagues—even when you're far apart</h2>
+          <h2>Real connections with friends, family, and colleagues—even when you'{/*'*/}re far apart</h2>
           <img src={connect} className="responsive-img" alt="group of people" />
           <div className="row">
             <div className="col s12 m6">
               <h5>Make a connection but never give away your privacy. Your conversations are yours, and yours alone. Encrypted by default, destroyed when you want.</h5>
             </div>
             <div className="col s12 m6">
-              <h5>More than email, more than chat. Have a conversation online for the first time without anyone but the person you're connecting with having access. No corporate middlemen. No databases and servers. Just you and your contacts.</h5>
+              <h5>More than email, more than chat. Have a conversation online for the first time without anyone but the person you'{/*'*/}re connecting with having access. No corporate middlemen. No databases and servers. Just you and your contacts.</h5>
             </div>
           </div>
         </div>
         <div className="center-align">
-          <a href="https://app.graphitedocs.com" target="_blank"><button className="btn black">Ready to Begin?</button></a>
+          <a href="https://app.graphitedocs.com" rel="noopener noreferrer" target="_blank"><button className="btn black">Ready to Begin?</button></a>
         </div>
       </div>
     );

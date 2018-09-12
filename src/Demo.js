@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import pencil from './pencil.png';
-import daniel from './daniel.jpg';
-import dan from './dan.jpeg';
-import ethan from './ethan.jpg';
+// import pencil from './pencil.png';
+// import daniel from './daniel.jpg';
+// import dan from './dan.jpeg';
+// import ethan from './ethan.jpg';
 import './App.css';
 import axios from 'axios';
 

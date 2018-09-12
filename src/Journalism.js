@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import pencil from './pencil.png';
 import './App.css';
-import personal from './personal.jpg';
-import connect from './connect.jpg';
 import march from './march.jpg';
 import layout from './layout.jpg';
 
@@ -16,7 +13,7 @@ class Journalism extends Component {
           <h5>Digital newsroom management and distributed, encrypted tools for journalists.</h5>
           <img className="march responsive-img" src={march} alt="protests" />
           <div className="row">
-            <h3>Journalism doesn't stop when it meets resistance. Graphite enables protection against censorship and snooping.</h3>
+            <h3>Journalism doesn'{/*'*/}t stop when it meets resistance. Graphite enables protection against censorship and snooping.</h3>
             <div className="col s12 m6">
               <i className="material-icons large">enhanced_encryption</i><h5>Contact sources, write drafts, and receive edits over a 100% encrypted protocol.</h5>
             </div>
@@ -32,7 +29,7 @@ class Journalism extends Component {
                 <img src={layout} className="responsive-img" alt="example article layout" />
               </div>
               <div className="col journo-benefits s12 m6">
-                <p><i className="material-icons">brush</i>It's more than just writing. Design around the story.</p>
+                <p><i className="material-icons">brush</i>It'{/*'*/}s more than just writing. Design around the story.</p>
                 <p><i className="material-icons">cloud_upload</i>Share drafts back and forth without worrying about privacy.</p>
                 <p><i className="material-icons">format_clear</i>Complete formatting tools to make it easy to get from first draft to final draft.</p>
                 <p><i className="material-icons">show_chart</i>From data to visualization in a snap thanks to the built-in Sheets to Documents connection for journalists and editors.</p>

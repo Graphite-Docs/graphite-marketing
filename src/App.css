@@ -3,9 +3,29 @@
 
 
 body {
-  background-color: #C4C4C4;
+  background-color: #fff;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
+}
+
+p {
+  font-size: 18px;
+}
+
+a {
+  color: #003182;
+}
+
+.feature-selection {
+  color: #282828!important;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 .features-btn {
@@ -45,8 +65,16 @@ body {
 }
 
 .features div {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  margin-bottom: 45px;
+}
+
+.features {
+  margin-top: 25px;
+}
+
+.learnMore {
+  margin-top: 35px;
+  margin-bottom: 55px;
 }
 
 .doc-img {
@@ -61,10 +89,39 @@ body {
   margin-top: 45px;
 }
 
+.phone-img {
+  max-width: 55%;
+}
+
+.table {
+  max-width: 75%;
+  margin: auto;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.mobile-text {
+  margin-top: 15%;
+}
+
+.pricing-cards {
+  margin-top: 35px;
+}
+
+.sign-up {
+  margin-top: 55px;
+  margin-bottom: 55px;
+  padding-top: 55px;
+}
+
+.pro-section {
+  margin-top: 45px;
+}
+
 .background-image-about {
   padding-top: 120px;
   padding-bottom: 120px;
-  background-image:url('https://images.unsplash.com/photo-1452690700222-8a2a1a109f4c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=dec947ac1899c9a6116a17217d7f8d9c');
+  background-image:url('images/people.jpeg');
   background-repeat:no-repeat;
   -webkit-background-size:cover;
   -moz-background-size:cover;
@@ -236,7 +293,7 @@ h1, h2, h3, h4, h5 {
 .hero-image-section {
   padding-top: 125px;
   padding-bottom: 125px;
-  background-image:url('https://images.unsplash.com/photo-1513258496099-48168024aec0?ixlib=rb-0.3.5&s=cb7c5760a677fe369d89e55641b5951a');
+  background-image:url('images/hero.jpeg');
   background-repeat:no-repeat;
   -webkit-background-size:cover;
   -moz-background-size:cover;
@@ -245,9 +302,20 @@ h1, h2, h3, h4, h5 {
   background-position:center;
 }
 
+.btn-margin {
+  margin-top: 25px;
+}
+
 .social-proof-img {
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
+}
+
+.social-proof {
+  width: 100%;
+  border-bottom: 1px solid #282828;
+  border-top: 1px solid #282828;
+  margin-top: 55px;
 }
 
 .wired {
@@ -268,6 +336,7 @@ h1, h2, h3, h4, h5 {
 
 .uses {
   margin: auto;
+  padding: auto;
 }
 
 .text-message {
@@ -377,7 +446,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .page-footer {
-  background: #C4C4C4;
+  background: #282828;
 }
 
 .dropdown-content li {

@@ -1,83 +1,17 @@
 import React, { Component } from 'react';
-import tweets from './tweets.png';
-import newdoc from './newdoc.png';
-import editdoc from './editdoc.png';
-import sheets from './sheets.png';
-import stats from './stats.png';
-import share from './Shared.png';
-import retrieve from './retrieve.png';
-import shareddoc from './shareddoc.png';
 import blockstack from './blockstack.png';
-import docs from './Documents_Large.png';
-import sheetsLarge from './Sheets_Large.png';
-import contacts from './Contacts_Large.png';
-import convos from './Conversations_Large.png';
 import wapo from './wapo.png';
 import wired from './wired.png';
 import lifehacker from './lifehacker.png';
 import cheddar from './cheddar.png';
-import vault from './vault.png';
-import Features from './Features.png';
+import Features from './images/dashboard.png';
 
 
 class Main extends Component {
+  componentDidMount() {
+    window.$('.modal').modal();
+  }
   render() {
-//     var TxtRotate = function(el, toRotate, period) {
-//       this.toRotate = toRotate;
-//       this.el = el;
-//       this.loopNum = 0;
-//       this.period = parseInt(period, 10) || 2000;
-//       this.txt = '';
-//       this.tick();
-//       this.isDeleting = false;
-//     };
-//
-// TxtRotate.prototype.tick = function() {
-//   var i = this.loopNum % this.toRotate.length;
-//   var fullTxt = this.toRotate[i];
-//
-//   if (this.isDeleting) {
-//     this.txt = fullTxt.substring(0, this.txt.length - 1);
-//   } else {
-//     this.txt = fullTxt.substring(0, this.txt.length + 1);
-//   }
-//
-//   this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-//
-//   var that = this;
-//   var delta = 300 - Math.random() * 100;
-//
-//   if (this.isDeleting) { delta /= 2; }
-//
-//   if (!this.isDeleting && this.txt === fullTxt) {
-//     delta = this.period;
-//     this.isDeleting = true;
-//   } else if (this.isDeleting && this.txt === '') {
-//     this.isDeleting = false;
-//     this.loopNum++;
-//     delta = 500;
-//   }
-//
-//   setTimeout(function() {
-//     that.tick();
-//   }, delta);
-// };
-//
-// window.onload = function() {
-//   var elements = document.getElementsByClassName('txt-rotate');
-//   for (var i=0; i<elements.length; i++) {
-//     var toRotate = elements[i].getAttribute('data-rotate');
-//     var period = elements[i].getAttribute('data-period');
-//     if (toRotate) {
-//       new TxtRotate(elements[i], JSON.parse(toRotate), period);
-//     }
-//   }
-//   // INJECT CSS
-//   var css = document.createElement("style");
-//   css.type = "text/css";
-//   css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
-//   document.body.appendChild(css);
-// };
 
     return(
       <div>
@@ -96,28 +30,28 @@ class Main extends Component {
       <div className="row container social-proof">
         <div className="col s3">
           <div>
-            <a href="https://www.wired.com/story/the-decentralized-internet-is-here-with-some-glitches" target="_blank" rel="noopener">
+            <a href="https://www.wired.com/story/the-decentralized-internet-is-here-with-some-glitches" rel="noopener noreferrer" target="_blank">
               <img className="social-proof-img wired responsive-img" src={wired} alt="Wired article about Graphite" />
             </a>
           </div>
         </div>
         <div className="col s3">
           <div>
-            <a href="https://www.washingtonpost.com/news/the-switch/wp/2018/03/23/the-new-technology-that-aspires-to-deletefacebook-for-good/?utm_term=.25e014058822" target="_blank" rel="noopener">
+            <a href="https://www.washingtonpost.com/news/the-switch/wp/2018/03/23/the-new-technology-that-aspires-to-deletefacebook-for-good/?utm_term=.25e014058822" rel="noopener noreferrer" target="_blank">
               <img className="social-proof-img wapo responsive-img" src={wapo} alt="Washington Post article about Graphite" />
             </a>
           </div>
         </div>
         <div className="col s3">
           <div>
-            <a href="https://lifehacker.com/check-out-this-google-docs-competitor-1823520656" target="_blank" rel="noopener">
+            <a href="https://lifehacker.com/check-out-this-google-docs-competitor-1823520656" target="_blank" rel="noopener noreferrer">
               <img className="social-proof-img lifehacker responsive-img" src={lifehacker} alt="Lifehacker article about Graphite" />
             </a>
           </div>
         </div>
         <div className="col s3">
           <div>
-            <a href="https://cheddar.com/videos/graphite-the-blockchain-backed-competitor-to-google-docs" target="_blank" rel="noopener">
+            <a href="https://cheddar.com/videos/graphite-the-blockchain-backed-competitor-to-google-docs" target="_blank" rel="noopener noreferrer">
               <img className="social-proof-img cheddar responsive-img" src={cheddar} alt="Cheddar interview with Graphite" />
             </a>
           </div>
@@ -142,44 +76,57 @@ class Main extends Component {
             <img className="vault-icon" src={vault} alt="conversations-icon" />
             <h4 className="flow-text">Vault</h4>
           </div>*/}
-          <img className="responsive-img" src={Features} alt="Features" />
+
           <div className="col s12 center-align">
-            <h5>Graphite is powered by <a href="http://blockstack.org" target="_blank">Blockstack</a> and is the first truly decentralized and encrypted replacement for Google G-Suite and Microsoft Office.</h5>
-            <a href="http://app.graphitedocs.com" target="_blank"><button
-              className="btn btn-primary btn-lg"
-              id="signin-button"
-            >
-              Get Started
-            </button></a>
-            <a href="/features"><button
-              className="btn btn-primary btn-lg grey"
-            >
-              Learn More
-            </button></a>
+            <h3>All your files in one place, secure and totally owned by you.</h3>
+            <img className="responsive-img" src={Features} alt="Graphite dashboard" />
+            <button data-target="videoModal" className="btn btn-margin black modal-trigger">Watch Video</button>
           </div>
-        </div>
-      </div>
-        <div className="grey-section">
-          <div className="container center-align">
-            <p className="caps white-text">Encrypted and decentralized</p>
-            <h5 className="white-text">Graphite enables convenient, secure, decentralized, and user-owned file creation, file storage, communication, and sharing.</h5>
-            <div className="row benefits center-align">
-              <div className="col s12 m4">
-                <i className="material-icons medium white-text">computer</i>
-                <p className="benefits-p white-text">Work and play with the same convenience you expect from cloud computing.</p>
-              </div>
-              <div className="col s12 m4">
-                <i className="material-icons medium white-text">content_copy</i>
-                <p className="benefits-p white-text">Share files, make edits, and collaborate while never losing ownership of your data.</p>
-              </div>
-              <div className="col s12 m4">
-                <i className="material-icons medium white-text">chat_bubble_outline</i>
-                <p className="benefits-p white-text">Chat with friends, colleagues, or classmates with full end-to-end encryption and privacy.</p>
-              </div>
-              <div className="center-align">
-                <a href="/features"><button className="btn features-btn waves-effect waves-light white black-text">Features</button></a>
+
+          {/* Video Modal */}
+          <div id="videoModal" className="modal">
+            <div className="modal-content">
+              <div className="video-container">
+                <iframe title="Graphite video" src="https://player.vimeo.com/video/288013669" width="640" height="400"></iframe>
               </div>
             </div>
+            <div className="modal-footer">
+              <a className="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
+          </div>
+          {/* Video Modal */}
+
+        </div>
+      </div>
+        <div className="dark-section">
+          <div className="container center-align">
+            <h5>Graphite is powered by <a className="underline" href="http://blockstack.org" target="_blank" rel="noopener noreferrer">Blockstack'{/*'*/}s</a> open source software and is the first truly decentralized and encrypted replacement for Google G-Suite and Microsoft Office.</h5>
+            <div className="row benefits center-align">
+              <div className="col s12 m4">
+                <i className="material-icons medium">computer</i>
+                <p className="benefits-p">Work and play with the same convenience you expect from cloud computing.</p>
+              </div>
+              <div className="col s12 m4">
+                <i className="material-icons medium">content_copy</i>
+                <p className="benefits-p">Share files, make edits, and collaborate while never losing ownership of your data.</p>
+              </div>
+              <div className="col s12 m4">
+                <i className="material-icons medium">chat_bubble_outline</i>
+                <p className="benefits-p">Chat with friends, colleagues, or classmates with full end-to-end encryption and privacy.</p>
+              </div>
+            </div>
+            <a href="http://app.graphitedocs.com" target="_blank" rel="noopener noreferrer"><button
+              className="btn btn-primary btn-margin btn-lg"
+              id="signup-button"
+            >
+              Sign Up For Free
+            </button></a>
+            <a href="/features"><button
+              className="btn btn-primary btn-margin btn-lg grey"
+            >
+              Features
+            </button></a>
+
           </div>
         </div>
       </div>
@@ -188,7 +135,7 @@ class Main extends Component {
         <h4>Graphite never stores your identity or data</h4>
         <img className="responsive-img" src={blockstack} alt="Blockstack architecture diagram" />
         <div>
-        <a href="http://blockstack.org" target="_blank"><button
+        <a href="http://blockstack.org" target="_blank" rel="noopener noreferrer"><button
           className="btn btn-primary btn-lg"
           id="signin-button"
         >

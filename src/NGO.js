@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import pencil from './pencil.png';
+// import pencil from './pencil.png';
 import './App.css';
-import personal from './personal.jpg';
-import connect from './connect.jpg';
-import march from './march.jpg';
-import layout from './layout.jpg';
-import man from './man.jpg';
-import arch from './diagram.png'
+// import personal from './personal.jpg';
+// import connect from './connect.jpg';
+// import march from './march.jpg';
+// import layout from './layout.jpg';
+// import man from './man.jpg';
+// import arch from './diagram.png'
 import leaders from './leaders.jpg';
 
 class NGO extends Component {
@@ -20,7 +20,7 @@ class NGO extends Component {
           <img src={leaders} className="march responsive-img" alt="protest" />
           <div className="row">
             <div className="col s12 m6">
-              <h3 className="coordinate">Whether it's public policy, human rights, social movements, or something else, organizing and distributing information takes coordination.</h3>
+              <h3 className="coordinate">Whether it'{/*'*/}s public policy, human rights, social movements, or something else, organizing and distributing information takes coordination.</h3>
             </div>
             <div className="col s12 m6 center-align">
               <p><i className="material-icons medium">person_add</i></p>
