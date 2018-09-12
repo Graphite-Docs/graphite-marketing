@@ -4,7 +4,7 @@ export default class RoleTable extends Component {
 
   render(){
       return(
-        <table className="bordered table">
+        <table className="responsive-table bordered table">
           <thead>
             <tr>
                 <th></th>

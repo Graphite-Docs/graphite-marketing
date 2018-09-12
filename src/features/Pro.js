@@ -53,7 +53,7 @@ class Pro extends Component {
             </div>
             <div className="col s10 mobile-text">
               <h5>Integrations</h5>
-              <p>Maintain the security of your workflow in Graphite while giving that workflow super powers with integrations. Send notifications, trigger actions, post entire documents are blog posts. It'{/*'*/}s up to you. Graphite Pro features integrations with Medium and Slack as well as a Webhook option for full customization.</p>
+              <p>Maintain the security of your workflow in Graphite while giving that workflow super powers with integrations. Send notifications, trigger actions, post entire documents as blog posts. It'{/*'*/}s up to you. Graphite Pro features integrations with Medium and Slack as well as a Webhook option for full customization.</p>
             </div>
           </div>
 
