@@ -48,12 +48,14 @@ class Pro extends Component {
           </div>
 
           <div className="row pro-section container">
-            <div className="col s2 center-align">
+            <div className="col s2 row center-align">
               <img src={integrations} className="responsive-img" alt="Integrations" />
             </div>
             <div className="col s10 mobile-text">
-              <h5>Integrations</h5>
-              <p>Maintain the security of your workflow in Graphite while giving that workflow super powers with integrations. Send notifications, trigger actions, post entire documents as blog posts. It'{/*'*/}s up to you. Graphite Pro features integrations with Medium and Slack as well as a Webhook option for full customization.</p>
+              <h3>Integrations</h3>
+              <h5>Medium — Post Graphite Docs as drafts to your Medium account.</h5>
+              <h5>Slack — When a Graphite Doc is shared with your team, an alert can be triggered on the channel of your choice.</h5>
+              <h5>Webhooks — Connect Graphite to ALMOST anything.</h5>
             </div>
           </div>
 
