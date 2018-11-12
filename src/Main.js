@@ -4,7 +4,8 @@ import wapo from './wapo.png';
 import wired from './wired.png';
 import lifehacker from './lifehacker.png';
 import cheddar from './cheddar.png';
-import Features from './images/dashboard.png';
+import document from './images/docsshot.png'
+import Features from './Features';
 
 
 class Main extends Component {
@@ -28,6 +29,7 @@ class Main extends Component {
       <div>
 
       <div className="row container social-proof">
+        <p className="center-align">As seen in:</p>
         <div className="col s3">
           <div>
             <a href="https://www.wired.com/story/the-decentralized-internet-is-here-with-some-glitches" rel="noopener noreferrer" target="_blank">
@@ -79,7 +81,7 @@ class Main extends Component {
 
           <div className="col s12 center-align">
             <h3>All your files in one place, secure and totally owned by you.</h3>
-            <img className="responsive-img" src={Features} alt="Graphite dashboard" />
+            <img className="responsive-img" src={document} alt="Graphite dashboard" />
             <button data-target="videoModal" className="btn btn-margin black modal-trigger">Watch Video</button>
           </div>
 
@@ -98,6 +100,8 @@ class Main extends Component {
 
         </div>
       </div>
+        <Features />
+
         <div className="dark-section">
           <div className="container center-align">
             <h5>Graphite is powered by <a className="underline" href="http://blockstack.org" target="_blank" rel="noopener noreferrer">Blockstack'{/*'*/}s</a> open source software and is the first truly decentralized and encrypted replacement for Google G-Suite and Microsoft Office.</h5>
@@ -120,11 +124,6 @@ class Main extends Component {
               id="signup-button"
             >
               Sign Up For Free
-            </button></a>
-            <a href="/features"><button
-              className="btn btn-primary btn-margin btn-lg grey"
-            >
-              Features
             </button></a>
 
           </div>

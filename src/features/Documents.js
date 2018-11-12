@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../App.css';
 import docsgrid from '../images/docsgrid.png';
 import tags from '../images/Tags.png'
-import share from '../images/oneclicksharing.png';
+import share from '../images/share.png';
 
 class Documents extends Component {
 

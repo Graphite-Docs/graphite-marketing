@@ -19,7 +19,7 @@ class Features extends Component {
     return (
       <div className="white">
         <div className="container intro">
-          <h3>Features</h3>
+          <h3 className="center-align">Features</h3>
         </div>
         <div className="row container center-align">
           <div className="col s4">

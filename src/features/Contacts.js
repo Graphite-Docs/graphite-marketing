@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import '../App.css';
-import types from '../images/types.png';
-import contactcard from '../images/contactcard.png';
-import find from '../images/findcontact.png';
+import types from '../images/contacttypes.png';
+import contactcard from '../images/profile.png';
+import find from '../images/search.png';
 
 class Contacts extends Component {
 

@@ -32,7 +32,7 @@ class Header extends Component {
             <li><a href="/features">Features</a></li>
             <li><a className="dropdown-button" data-activates="dropdown2">Uses<i className="material-icons drop right">arrow_drop_down</i></a></li>
             {/*<li><a href="/faq">FAQ</a></li>*/}
-            <li><a href="/pricing">Pricing</a></li>
+            {/*<li><a href="/pricing">Pricing</a></li>*/}
             <li><a href="/demo">Request Demo</a></li>
             <li><a href="http://app.graphitedocs.com" rel="noopener noreferrer" target="_blank">Sign in</a></li>
           </ul>

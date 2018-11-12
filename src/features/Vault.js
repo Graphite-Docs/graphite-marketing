@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../App.css';
 import upload from '../images/upload.png'
-import vaultshare from '../images/vaultshare.png';
+import vaultshare from '../images/sharing.png';
 import video from '../images/video.png';
 
 class Vault extends Component {
