@@ -7,7 +7,7 @@ $('#newsletter').submit(function (e) {
     var settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://hooks.zapier.com/hooks/catch/2565501/pq92q9/",
+        "url": "https://wt-3fc6875d06541ef8d0e9ab2dfcf85d23-0.sandbox.auth0-extend.com/email-subscribe",
         "method": "POST",
         "headers": {
           "Cache-Control": "no-cache",
