@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="none" viewBox="0 0 55 55">
+    <path fill="#fff" d="M0 0h55v55H0z"/>
+    <circle cx="24" cy="31.35" r="23" fill="#FFBD27"/>
+    <path fill="#121212" d="M21.5 34.348H54v4H20l1.5-4z"/>
+    <path fill="#000" d="M19.999 38.348L33.549 0 51.8 14.993 20 38.348z"/>
+    <mask id="a" width="33" height="39" x="19" y="0" maskUnits="userSpaceOnUse">
+        <path fill="#000" d="M19.999 38.348L33.549 0 51.8 14.993 20 38.348z"/>
+    </mask>
+    <g mask="url(#a)">
+        <circle cx="22.998" cy="34.348" r="6" fill="#F6F6F6"/>
+        <circle cx="46.5" cy="2.848" r="13.5" fill="#fff"/>
+    </g>
+</svg>

@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Wired Magazine", 
+        "test": "I usually write in Google's online word processor Google Docs, even when noting the company's shortcomings. This article is different: it was drafted in a similar but more private service called Graphite Docs.", 
+        "url": "https://www.wired.com/story/the-decentralized-internet-is-here-with-some-glitches/",
+        "author": "Tom Simonite"
+    }, 
+    {
+        "name": "The Guardian", 
+        "test": "The decentralised web isn’t quite here yet. But there are apps and programs built on the decentralised model. Many are experimental but some of the more developed products include OpenBazaar (a decentralised marketplace), Graphite Docs (a Google documents alternative).", 
+        "url": "https://www.theguardian.com/technology/2018/sep/08/decentralisation-next-big-step-for-the-world-wide-web-dweb-data-internet-censorship-brewster-kahle?CMP=share_btn_tw",
+        "author": "Zoë Corbyn" 
+    }, 
+    {
+        "name": "LifeHacker", 
+        "test": "My favorite thing about Graphite, the new blockchain-based Google Docs competitor, is that it’s so much faster.", 
+        "url": "https://lifehacker.com/check-out-this-google-docs-competitor-1823520656",
+        "author": "Nick Douglas" 
+    }
+]

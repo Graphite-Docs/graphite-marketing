@@ -1,0 +1,16 @@
+<svg width="48" height="46" viewBox="0 0 48 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+<ellipse cx="23" cy="23" rx="23" ry="23" fill="#FFBD27"/>
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="46" height="46">
+<ellipse cx="23" cy="23" rx="23" ry="23" fill="#FFBD27"/>
+</mask>
+<g mask="url(#mask0)">
+</g>
+<path d="M6 14.9949C6 10.5794 9.57942 7 13.9949 7H38.0051C42.4206 7 46 10.5794 46 14.9949V16.0058C46 20.9731 41.9731 25 37.0058 25H6V14.9949Z" fill="#121212"/>
+<ellipse cx="16.5" cy="16.5" rx="2.5" ry="2.5" fill="#FFBD27"/>
+<ellipse cx="26.5" cy="16.5" rx="2.5" ry="2.5" fill="#FFBD27"/>
+<ellipse cx="36.5" cy="16.5" rx="2.5" ry="2.5" fill="#FFBD27"/>
+<path d="M48 33.5964C48 30.5056 45.4944 28 42.4036 28H25.5964C22.5056 28 20 30.5056 20 33.5964V34.304C20 37.7812 22.8188 40.6 26.296 40.6H48V33.5964Z" fill="#121212"/>
+<ellipse rx="1.75" ry="1.75" transform="matrix(-1 0 0 1 40.6495 34.6499)" fill="white"/>
+<ellipse rx="1.75" ry="1.75" transform="matrix(-1 0 0 1 33.6495 34.6499)" fill="white"/>
+<ellipse rx="1.75" ry="1.75" transform="matrix(-1 0 0 1 26.6495 34.6499)" fill="white"/>
+</svg>
