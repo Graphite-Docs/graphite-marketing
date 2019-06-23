@@ -480,7 +480,7 @@ h1 {
 .foot {
   position: relative;
   width: 100%;
-  height: 200px;
+  height: auto;
   background: url('./assets/Wave.png'), #121212;
 }
 
@@ -693,6 +693,16 @@ h1 {
     z-index: -1;
     background: #FFBD27;
     margin-top: 150px;
+  }
+
+  .custom-modal div {
+    padding: 0!important;
+    text-align: center;
+    margin-top: 20px!important;
+  }
+
+  .details-one h1, .enterprise-summary h1 {
+    font-size: 36px!important;
   }
 }
 

@@ -29,7 +29,7 @@ class DetailedProduct extends React.Component {
             <div className="detailed-product">
                 <div className="github-box">
                     <div>
-                        <div className="columns is-mobile">
+                        <div className="columns is-tablet">
                             <div className="column is-two-thirds">
                                 <p>Graphite is open source and available for contributions. You can also run Graphite locally on your computer without visiting the hosted site. <a href="https://github.com/graphite-docs/graphite">Clone if from Github</a>.</p>
                             </div>

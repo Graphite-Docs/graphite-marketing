@@ -48,7 +48,7 @@ class Testimonials extends React.Component {
       <div className="testimonials-main">
             <div className="github-box">
                 <div>
-                    <div className="columns is-mobile">
+                    <div className="columns is-tablet">
                         <div className="column is-two-thirds">
                             <p>The features you need for a price you can afford. <a href="https://app.graphitedocs.com">Try Graphite for free now</a>, and when you're ready, let's talk about Graphite Pro.</p>
                         </div>

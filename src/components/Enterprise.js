@@ -17,7 +17,7 @@ class Enterprise extends React.Component {
         <div id="enterprise" className="enterprise-product">
             <div className="github-box">
                 <div>
-                    <div className="columns is-mobile">
+                    <div className="columns is-tablet">
                         <div className="column is-two-thirds">
                             <p>Ready to get to work? <a href="https://app.graphitedocs.com">Start using Graphite for free now</a>. Or, contact us to learn about how Graphite can help your organization protect its privacy and increase its security.</p>
                         </div>

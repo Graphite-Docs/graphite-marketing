@@ -8,7 +8,7 @@ class Footer extends React.Component {
   render() {
     return (
       <div className="foot">
-        <div className="columns footer-cols is-mobile">
+        <div className="columns footer-cols is-tablet">
             <div className="column">
                 <img className="footer-logo" src={graphiteLogo} />
                 <p><a href="contact@graphitedocs.com">contact@graphitedocs.com</a></p>
