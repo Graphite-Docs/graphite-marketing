@@ -187,6 +187,7 @@ h1 {
   top: 0;
   left: 0;
   z-index: 999;
+  overflow: scroll;
 }
 
 .custom-modal div {
@@ -512,6 +513,40 @@ h1 {
   display: inline;
   margin-right: 8px;
   margin-top: 5px;
+}
+
+.demo-form {
+  max-width: 100%;
+  margin: auto;
+}
+
+.demo-form input, .demo-form textarea {
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  width: 300px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.submit-demo {
+  height: 60px;
+  width: 200px;
+  background: #FFBD27;
+  border: none;
+  cursor: pointer;
+}
+
+.closeIcon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.doc-ex {
+  border: 1px solid #121212!important;
+  border-radius: 8px!important;
 }
 
 /* Media Queries */

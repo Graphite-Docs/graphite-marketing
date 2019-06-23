@@ -59,13 +59,13 @@ class Testimonials extends React.Component {
                 </div>
             </div>
             <div className="testimonial-examples">
-                <div class="columns is-mobile">
-                    <div class="column arrow-col">
+                <div className="columns is-mobile">
+                    <div className="column arrow-col">
                         {
                             testimonial > 0 ? <img style={{cursor: "pointer"}} onClick={() => this.changeTestimonial("left")} src={arrowLeft} /> : <div className="hide" />
                         }
                     </div>
-                    <div class="column testimonial">
+                    <div className="column testimonial">
                         <a style={{color: "#121212"}} href={testimonials[testimonial].url}>
                             <div>
                                 <img src={srcImg} />
@@ -76,7 +76,7 @@ class Testimonials extends React.Component {
                             </div>
                         </a>
                     </div>
-                    <div class="column arrow-col">
+                    <div className="column arrow-col">
                         {
                             testimonial +1 < testimonials.length ? <img style={{cursor: "pointer"}} onClick={() => this.changeTestimonial("right")} src={arrowRight} /> : <div className="hide" />
                         }

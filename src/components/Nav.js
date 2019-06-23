@@ -52,11 +52,11 @@ function Nav() {
             <div className="navbar-end">
                 <div className="navbar-item">
                 <div className="buttons">
-                    <a className="demo-button">
+                    <a onClick={() => document.getElementById('demoModal').style.display = "block"} className="demo-button">
                     <strong>Request Demo</strong>
                     </a>
-                    <a className="g-button">
-                    <strong>Get Graphite</strong>
+                    <a href="https://app.graphitedocs.com" className="g-button">
+                    <strong>Start Now</strong>
                     </a>
                 </div>
                 </div>

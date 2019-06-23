@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import hero from '../assets/hero-img.svg';
 import { handleIdCheck } from '../helpers.js';
+import axios from 'axios';
+var FileSaver = require('file-saver');
 let content;
 let type;
 
@@ -15,11 +17,55 @@ export default class Hero extends Component {
         this.setState({ type });
     }
 
+    fetchPDF = () => {
+        axios.get('https://gaia.blockstack.org/hub/1Q5G5kWwDikELELXc54tNdwTg8gbfnLKDU/public/files/e8b3769f-536d-4b07-95af-4d2995a01f0a.json')
+            .then((res) => {
+                console.log(res);
+                var oReq = new XMLHttpRequest();
+                var URLToPDF = res.data.link;
+            
+                // Configure XMLHttpRequest
+                oReq.open("GET", URLToPDF, true);
+            
+                // Important to use the blob response type
+                oReq.responseType = "blob";
+            
+                // When the file request finishes
+                // Is up to you, the configuration for error events etc.
+                oReq.onload = function() {
+                    // Once the file is downloaded, open a new window with the PDF
+                    // Remember to allow the POP-UPS in your browser
+                    var file = new Blob([oReq.response], { 
+                        type: 'application/pdf' 
+                    });
+                    
+                    // Generate file download directly in the browser !
+                    FileSaver.saveAs(file, "casestudy.pdf");
+                };
+            
+                oReq.send();
+            }).catch(err => console.log(err));
+    }
+
     async handleEmail() {
-        const modal = await handleIdCheck();
-        if(modal === true) {
-            document.getElementById('email-addy').value = "";
-            document.getElementById('thanksModal').style.display = "block";
+        const email = document.getElementById('email-addy').value;
+        const emailBody = {
+            email
+        }
+        var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        if(re.test(String(email).toLowerCase())) {
+            document.getElementById('err-msg').style.display = "none";
+            axios.post('https://hooks.zapier.com/hooks/catch/2565501/oy9uofw/', JSON.stringify(emailBody))
+                .then((res) => {
+                    console.log(res);
+                }).catch(err => console.log(err));
+            const modal = await handleIdCheck();
+            if(modal === true) {
+                document.getElementById('email-addy').value = "";
+                document.getElementById('thanksModal').style.display = "block";
+            }
+        } else {
+            document.getElementById('err-msg').style.display = "block";
         }
     }
 
@@ -74,6 +120,9 @@ export default class Hero extends Component {
                                     {this.renderContent()}
                                     <div className="margin-top-20">
                                         <input id="email-addy" type="text" placeholder="Enter your email to learn more" /><button onClick={this.handleEmail} className="hero-get-started">Learn More</button>
+                                        <div id="err-msg" style={{display: "none"}}>
+                                            <p style={{color: "red"}}>Please enter a valid email address</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -87,8 +136,8 @@ export default class Hero extends Component {
                     <div>
                         <span onClick={() => document.getElementById('thanksModal').style.display = "none"}>X</span>
                         <h1>Thanks for your interest!</h1>
-                        <h3>Someone will reach out soon. In the meantime, download this case study on how Graphite supports NGOs.</h3>
-                        <button className="download-btn">Download</button>
+                        <h3>Someone will reach out soon. In the meantime, download this case study on how Graphite supports NGOs, journalists, and businesses.</h3>
+                        <button onClick={this.fetchPDF} className="download-btn">Download</button>
                     </div>
                 </div>
             </div>

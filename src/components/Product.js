@@ -1,6 +1,6 @@
 import React from 'react';
 import productIcon from '../assets/Section-Icon.svg';
-import demo from '../assets/demo.svg';
+import demo from '../assets/document.png';
 import secure from '../assets/feature-icon-key.svg'
 import edit from '../assets/feature-icon-doc.svg'
 import rtc from '../assets/feature-icon-collaborate.svg'
@@ -20,7 +20,7 @@ function Product() {
         </div>
         <div className="product-rect"></div>
         <div id="product-demo">
-            <img src={demo} alt="computer with editor" />
+            <img className="doc-ex" src={demo} alt="computer with editor" />
             <div>
                 <nav className="navbar product-nav" role="navigation" aria-label="main navigation">
                     <div className="navbar-brand">

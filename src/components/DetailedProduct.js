@@ -3,7 +3,7 @@ import github from '../assets/github.svg';
 import circles from '../assets/circles.svg';
 import detailsOne from '../assets/details-icon-one.svg';
 import hero from '../assets/hero-img.svg';
-import docs from '../assets/docs.gif';
+import docs from '../assets/docsdemo.gif';
 import encryptedCollab from '../assets/encryptedCollab.svg'
 
 
@@ -45,15 +45,15 @@ class DetailedProduct extends React.Component {
                     <p>Cloud computing brought us the convenience of being able to access our data from anywhere. From any device. It also brought with it the risk of exposing our most personal information. Graphite continues the convenience of cloud computing but plugs the security and privacy gaps left by large tech companies.</p>
                 </div>
                 <div className="details-two">
-                    <div class="columns is-desktop">
-                        <div class="column">
+                    <div className="columns is-desktop">
+                        <div className="column">
                             <div style={{maxWidth: "65%", margin: "auto"}}>
                                 <img src={detailsOne} />
                                 <h2>Access Your Content Anywhere, Anytime</h2>
                                 <p>Your identity plus your encryption keys are all you need to access your content from any device. Log into your account on a new device, and the encryption keys are automatically derived for you, meaning you're ready to go in about the same time it takes to log into a regular application.</p>
                             </div>
                         </div>
-                        <div class="column orange-column">
+                        <div className="column orange-column">
                             <div className="orange-circle">
                             </div>
                             <img style={{position: "relative"}} src={hero} />
@@ -61,12 +61,12 @@ class DetailedProduct extends React.Component {
                     </div>
                 </div>
                 <div className="details-three">
-                <div class="columns is-desktop">
-                        <div class="column black-column">
+                <div className="columns is-desktop">
+                        <div className="column black-column">
                             <div className="black-circle"></div>
                             <img className="docs-gif" style={{position: "relative"}} src={docs} />
                         </div>
-                        <div class="column">
+                        <div className="column">
                             <div style={{maxWidth: "65%", margin: "auto"}}>
                                     <img src={encryptedCollab} />
                                     <h2>Your Edits, Their Edits—All Synced, All Encrypted</h2>
