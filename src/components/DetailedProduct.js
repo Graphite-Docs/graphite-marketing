@@ -31,7 +31,7 @@ class DetailedProduct extends React.Component {
                     <div>
                         <div className="columns is-tablet">
                             <div className="column is-two-thirds">
-                                <p>Graphite is open source and available for contributions. You can also run Graphite locally on your computer without visiting the hosted site. <a href="https://github.com/graphite-docs/graphite">Clone if from Github</a>.</p>
+                                <p>Graphite is open source and available for contributions. You can also run Graphite locally on your computer without visiting the hosted site. <a href="https://github.com/graphite-docs/graphite">Clone it from Github</a>.</p>
                             </div>
                             <div className="column is-one-third">
                                 <div className="github-stars"><div><img style={{float: "left"}} src={github} /><a href="https://github.com/graphite-docs/graphite"><strong style={{paddingTop: "2px"}}>{stars} Stars</strong></a></div></div>
