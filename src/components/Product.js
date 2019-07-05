@@ -15,7 +15,7 @@ function Product() {
             <img src={productIcon} alt='icon' />
         </div>
         <div className="center product-info">
-            <h1>Unbreakable security and privacy for all your documents and files</h1>
+            <h1>Security and privacy for all your documents and files</h1>
             <p>Graphite gives you the tools to get work done securely. Document creation and editing, team collaboration, file sharing, and more—all encrypted, all private.</p>
         </div>
         <div className="product-rect"></div>
