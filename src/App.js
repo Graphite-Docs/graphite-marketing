@@ -1,14 +1,8 @@
 import React from 'react';
-import { BrowserRouter, Router } from 'react-router-dom';
-import Nav from './components/Nav';
-import Hero from './components/Hero';
-import SocialProof from './components/SocialProof';
-import Product from './components/Product';
-import DetailedProduct from './components/DetailedProduct';
-import EnterpriseProduct from './components/Enterprise';
-import DemoModal from './components/DemoModal';
-import Testimonials from './components/Testimonials';
-import Footer from './components/Footer';
+import { BrowserRouter, Route } from 'react-router-dom';
+import Home from './containers/Home';
+import About from './containers/About';
+import Labs from './containers/Labs';
 import './index.css';
 import './App.css';
 import 'bulma/css/bulma.min.css';
@@ -21,15 +15,9 @@ class App extends React.Component {
       <div>
         <BrowserRouter>
           <div>
-            <Nav />
-            <DemoModal />
-            <Hero />
-            <SocialProof />
-            <Product />
-            <DetailedProduct />
-            <EnterpriseProduct />
-            <Testimonials />
-            <Footer />
+            <Route exact path='/' component={Home} />
+            <Route exact path='/about' component={About} />
+            <Route exact path='/labs' component={Labs} />
           </div>
         </BrowserRouter>
       </div>

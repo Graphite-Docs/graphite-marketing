@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import graphiteLogo from '../assets/graphite-logo.svg';
 import twitter from '../assets/twitter.svg';
 import linkedin from '../assets/linkedin.svg';
@@ -20,6 +21,7 @@ class Footer extends React.Component {
             </div>
             <div className="column">
                 <h4>Company</h4>
+                <p><Link to={'/labs'}>Graphite Labs</Link></p>
                 <p><a href="https://blog.graphitedocs.com">Blog</a></p>
                 <p><a href="https://app.graphitedocs.com/shared/docs/graphite.id-1551220081697">Privacy Policy</a></p>
                 <p><a href="mailto:contact@graphitedocs.com">Contact</a></p>

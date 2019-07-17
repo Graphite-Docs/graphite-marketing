@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import graphiteLogo from '../assets/graphite-logo.svg';
 let open = false;
 
@@ -22,9 +23,9 @@ function Nav() {
   return (
     <nav className="navbar main-nav is-fixed-top" role="navigation" aria-label="main navigation">
             <div className="navbar-brand">
-            <a className="navbar-item" href="/">
+            <Link to={'/'} className="navbar-item" href="/">
                 <img src={graphiteLogo} className="logo" alt="graphite-logo" />
-            </a>
+            </Link>
 
             <a role="button" onClick={toggleMenu} className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                 <span aria-hidden="true"></span>
@@ -35,18 +36,21 @@ function Nav() {
 
             <div id="navbarBasicExample" className="navbar-menu fade-in">
             <div className="navbar-start">
-                <a href="#uses" className="navbar-item">
+                <a href="/#uses" className="navbar-item">
                 Use Cases
                 </a>
-                <a href="#why-graphite" className="navbar-item">
+                <a href="/#why-graphite" className="navbar-item">
                 Why Graphite
                 </a>
-                <a href="#features" className="navbar-item">
+                <a href="/#features" className="navbar-item">
                 Features
                 </a>
-                <a href="#enterprise" className="navbar-item">
+                <a href="/#enterprise" className="navbar-item">
                 Enterprise
                 </a>
+                <Link to={'/about'} className="navbar-item">
+                About
+                </Link>
             </div>
 
             <div className="navbar-end">

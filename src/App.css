@@ -549,6 +549,63 @@ h1 {
   border-radius: 8px!important;
 }
 
+.about-content p {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.about-content p a  {
+  color: #FFBD27;
+}
+
+.faq-section h3 {
+  font-size: 24px;
+}
+
+.faq-section p {
+  margin-bottom: 30px;
+}
+
+.team-images {
+  max-width: 50%;
+  border-radius: 5px;
+}
+
+#team .columns {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#team .columns .column h3 {
+  font-size: 20px;
+}
+
+#labs-section {
+  padding-top: 170px;
+}
+
+#labs-examples {
+  margin-top: 40px;
+  text-align: center;
+}
+
+#labs-examples .columns .column a {
+  color: #282828;
+}
+
+#labs-examples .columns .column a h3 {
+  font-size: 20px;
+}
+
+.labs-rect {
+  position: absolute;
+  width: 100vw;
+  height: 75px;
+  z-index: -1;
+  background: #FFBD27;
+  margin-top: 100px;
+}
+
 /* Media Queries */
 
 @media only screen and (max-width: 1600px) {
