@@ -58,7 +58,7 @@ export default class AboutHero extends React.Component {
 
     render() {
         return (
-            <div id="uses" className="margin-top-60 hero-main">
+            <div id="uses" className="margin-top-60 hero-main about-hero">
                 <div id="wave">
                     <div className="container">
                         <div className="columns">
