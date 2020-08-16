@@ -64,27 +64,26 @@ export default class AboutHero extends React.Component {
                         <div className="columns">
                             <div className="column">
                                 <div className="hero-content about-content">
-                                    <h3 style={{fontSize: "36px"}}>Graphite is changing the way you work</h3>
+                                    <h3 style={{fontSize: "36px"}}>Graphite was all about changing the way you work</h3>
                                     <div className="margin-top-20">
                                         <p>Founded in March of 2018, Graphite grew out of a passion project designed to give writers control of their data. To be completely accurate, it grew out of a desire to give Graphite's founder control over his own writing. 
                                             Graphite was never meant to be a publicly available, commerical product. It was originally designed to be a tool used by Graphite's founder. But as with many projects that start like this, others heard about it and wanted to use it. 
                                             Those early adopters helped encourage and drive continued work and Graphite grew into a full productivity suite designed to protect your privacy. 
                                         </p>
                                         <p>
-                                            Graphite's main goal is to give people control. This starts with protecting privacy via encryption, but it extends to giving people the ability to choose where their content is stored. While Google is comfortable storing all of your 
-                                            content in their own databases, unenecrypted and available for snooping, Graphite wants no part in that. 
+                                            Graphite's main goal was to give people control. This started with protecting privacy via encryption, but it extended into giving people the ability to choose where their content was stored. While Google is comfortable storing all of your 
+                                            content in their own databases, unenecrypted and available for snooping, Graphite never wanted to be a part of that paradigm. 
                                         </p>
                                         <p>
-                                            Graphite offers document editing and collaboration tools, file storage and sharing tools, form builders and analysis, contact management, and team management. If you are an individual, Graphite is absolutely free and you can get started <a href="https://app.graphitedocs.com">here</a>.
-                                             If you are an organization interested in protecting the work you do, please request a demo and get in touch. Graphite is excited and ready to help. 
+                                            Graphite offered document editing and collaboration tools, file storage and sharing tools, form builders and analysis, contact management, and team management.
                                         </p>
                                     </div>
-                                    <div className="margin-top-40">
+                                    {/* <div className="margin-top-40">
                                         <input id="email-addy" type="text" placeholder="Enter your email to learn more" /><button onClick={this.handleEmail} className="hero-get-started">Learn More</button>
                                         <div id="err-msg" style={{display: "none"}}>
                                             <p style={{color: "red"}}>Please enter a valid email address</p>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                             

@@ -52,9 +52,7 @@ class Testimonials extends React.Component {
                         <div className="column is-two-thirds">
                             <p>The features you need for a price you can afford. <a href="https://app.graphitedocs.com">Try Graphite for free now</a>, and when you're ready, let's talk about Graphite Pro.</p>
                         </div>
-                        <div className="column is-one-third">
-                            <div className="github-stars"><div><a onClick={this.loadDemoModal} style={{color: "#121212", position: "relative", top: "3px"}}>Request Demo</a></div></div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>

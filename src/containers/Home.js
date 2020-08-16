@@ -8,20 +8,22 @@ import EnterpriseProduct from '../components/Enterprise';
 import DemoModal from '../components/DemoModal';
 import Testimonials from '../components/Testimonials';
 import Footer from '../components/Footer';
+import Banner from '../components/Banner';
 
 export default class Home extends React.Component {
     render() {
         return (
             <div>
                 <Nav />
+                <Banner />
                 <DemoModal />
                 <Hero />
-                <SocialProof />
+                {/* <SocialProof />
                 <Product />
                 <DetailedProduct />
                 <EnterpriseProduct />
-                <Testimonials />
-                <Footer />
+                <Testimonials /> */}
+                {/* <Footer /> */}
             </div>
         )
     }

@@ -36,7 +36,7 @@ function Nav() {
 
             <div id="navbarBasicExample" className="navbar-menu fade-in">
             <div className="navbar-start">
-                <a href="/#uses" className="navbar-item">
+                {/* <a href="/#uses" className="navbar-item">
                 Use Cases
                 </a>
                 <a href="/#why-graphite" className="navbar-item">
@@ -47,7 +47,7 @@ function Nav() {
                 </a>
                 <a href="/#enterprise" className="navbar-item">
                 Enterprise
-                </a>
+                </a> */}
                 <Link to={'/about'} className="navbar-item">
                 About
                 </Link>
@@ -55,14 +55,7 @@ function Nav() {
 
             <div className="navbar-end">
                 <div className="navbar-item">
-                <div className="buttons">
-                    <a onClick={() => document.getElementById('demoModal').style.display = "block"} className="demo-button">
-                    <strong>Request Demo</strong>
-                    </a>
-                    <a href="https://app.graphitedocs.com" className="g-button">
-                    <strong>Start Now</strong>
-                    </a>
-                </div>
+                
                 </div>
             </div>
             </div>

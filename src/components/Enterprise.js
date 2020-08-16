@@ -21,9 +21,7 @@ class Enterprise extends React.Component {
                         <div className="column is-two-thirds">
                             <p>Ready to get to work? <a href="https://app.graphitedocs.com">Start using Graphite for free now</a>. Or, contact us to learn about how Graphite can help your organization protect its privacy and increase its security.</p>
                         </div>
-                        <div className="column is-one-third">
-                            <div className="github-stars"><div><a onClick={this.loadDemoModal} style={{color: "#121212", position: "relative", top: "3px"}}>Request Demo</a></div></div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>

@@ -100,10 +100,10 @@ export default class Hero extends Component {
         return (
             <div id="uses" className="margin-top-60 hero-main">
                 <div id="wave">
-                    <div className="container">
+                    <div style={{maxWidth: "85%", margin: "auto"}}>
                         <div className="columns">
                             <div className="column">
-                                <nav className="navbar hero-nav" role="navigation" aria-label="main navigation">
+                                {/* <nav className="navbar hero-nav" role="navigation" aria-label="main navigation">
                                     <div className="navbar-brand">
                                         <a className="navbar-item" onClick={() => this.setType('ngo')}>
                                             NGOs
@@ -124,22 +124,35 @@ export default class Hero extends Component {
                                             <p style={{color: "red"}}>Please enter a valid email address</p>
                                         </div>
                                     </div>
+                                </div> */}
+                                <div style={{ color: "#fff"}}>
+                                    <h1>Goodbye from Graphite</h1>
+                                    <p style={{marginTop: 15, fontSize: 20}}>Graphite was a decentralized, privacy-centric alternative to Google Docs. It saw 
+                                        quite a bit of press and had a loyal user-base. However, as with many great products, 
+                                        it could not find product-market fit in time. 
+                                    </p>
+                                    <p style={{marginTop: 15, fontSize: 20}}>So, while Graphite is no longer a company or a hosted app, it's source code will live on and 
+                                        forever be available to anyone who wants to use it or build off it. 
+                                    </p>
+                                    <p style={{marginTop: 15, fontSize: 20}}>Thank you to everyone who supported Graphite over the years. You mean the world to me!</p>
+                                    <p style={{marginTop: 15, fontSize: 20}}>Sincerely,</p>
+                                    <p style={{fontSize: 20}}>Justin Hunter</p>
                                 </div>
                             </div>
-                            <div className="column">
+                            {/* <div className="column">
                                 <img className="hero-img" src={hero} alt="computer and phone with example" />
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
-                <div style={{display: "none"}} id="thanksModal" className="custom-modal">
+                {/* <div style={{display: "none"}} id="thanksModal" className="custom-modal">
                     <div>
                         <span onClick={() => document.getElementById('thanksModal').style.display = "none"}>X</span>
                         <h1>Thanks for your interest!</h1>
                         <h3>Someone will reach out soon. In the meantime, download this case study on how Graphite supports NGOs, journalists, and businesses.</h3>
                         <button onClick={this.fetchPDF} className="download-btn">Download</button>
                     </div>
-                </div>
+                </div> */}
             </div>
           );
     }
