@@ -126,6 +126,11 @@ export default class Hero extends Component {
                                     </div>
                                 </div> */}
                                 <div style={{ color: "#fff"}}>
+                                    <h1>An Update For 2021</h1>
+                                    <p style={{marginTop: 15, fontSize: 20}}>While Graphite is not coming back to life 😔, I do have news. Many of you who used Graphite were writers. Whether that be in the field of journalism, poetry, prose, screenwriting or something else, you were (and are) my community in that regard. So, I thought I'd share my newest project here.</p>
+                                    <p style={{marginTop: 15, fontSize: 20}}><a href="https://perligo.io">Perligo</a> is a crtique group community for writers. While a very different project than Graphite, the interest overlap might be there. Perligo is launching soon, so if you're interested, I hope you'll check it out.</p>
+                                </div>
+                                <div style={{ color: "#fff"}}>
                                     <h1>Goodbye from Graphite</h1>
                                     <p style={{marginTop: 15, fontSize: 20}}>Graphite was a decentralized, privacy-centric alternative to Google Docs. It saw 
                                         quite a bit of press and had a loyal user-base. However, as with many great products, 

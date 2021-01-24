@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 import Home from './containers/Home';
-import About from './containers/About';
-import Labs from './containers/Labs';
+// import About from './containers/About';
+// import Labs from './containers/Labs';
 import './index.css';
 import './App.css';
 import 'bulma/css/bulma.min.css';
@@ -16,8 +16,8 @@ class App extends React.Component {
         <BrowserRouter>
           <div>
             <Route exact path='/' component={Home} />
-            <Route exact path='/about' component={About} />
-            <Route exact path='/labs' component={Labs} />
+            {/* <Route exact path='/about' component={About} />
+            <Route exact path='/labs' component={Labs} /> */}
           </div>
         </BrowserRouter>
       </div>

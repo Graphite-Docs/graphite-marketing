@@ -48,9 +48,9 @@ function Nav() {
                 <a href="/#enterprise" className="navbar-item">
                 Enterprise
                 </a> */}
-                <Link to={'/about'} className="navbar-item">
+                {/* <Link to={'/about'} className="navbar-item">
                 About
-                </Link>
+                </Link> */}
             </div>
 
             <div className="navbar-end">
